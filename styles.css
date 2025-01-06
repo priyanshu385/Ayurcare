@@ -1,0 +1,631 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* navbar ke liye */
+
+nav {
+    background-color: #24d3bf;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 40px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #004d40;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #20ca97;
+}
+
+
+
+/* home page ke liye */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    /* background: linear-gradient(135deg, #00796b, #004d40); */
+    color: black;
+    text-align: center;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#home p {
+    font-size: 18px;
+    margin: 0;
+    max-width: 600px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 28px;
+    }
+    #home p {
+        font-size: 16px;
+    }
+}
+.section1{
+    background-image: url(yoga-excersice/backimage.jpg);
+    height: 600px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* disease section ke liye */
+/* Diseases Section */
+#diseases {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+#diseases h2 {
+    font-size: 32px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+#diseases p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Grid Container */
+#diseases > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Grid Block */
+#diseases > div > div {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#diseases > div > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+#diseases img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Headings in Grid Block */
+#diseases h3 {
+    font-size: 20px;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+/* Paragraph in Grid Block */
+#diseases p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Button or Link */
+#diseases a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #004d40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#diseases a:hover {
+    background: #00796b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #diseases {
+        padding: 40px 15px;
+    }
+
+    #diseases h2 {
+        font-size: 28px;
+    }
+
+    #diseases p {
+        font-size: 16px;
+    }
+}
+.more{
+    margin-left: 1100px;
+}
+
+
+
+/* yoga section ke liye */
+/* Library Section */
+#library {
+    padding: 60px 20px;
+    background-color: #e8f5e9;
+    color: #333;
+    text-align: center;
+}
+
+#library h2 {
+    font-size: 32px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+#library p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Grid Container */
+#library > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Grid Block */
+#library > div > div {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#library > div > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+#library img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Yoga Pose Titles */
+#library h3 {
+    font-size: 22px;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+/* Description Text */
+#library p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Highlight Diseases */
+#library b {
+    color: #004d40;
+    font-size: 16px;
+}
+
+/* Button or Link */
+#library a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #004d40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#library a:hover {
+    background: #00796b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #library {
+        padding: 40px 15px;
+    }
+
+    #library h2 {
+        font-size: 28px;
+    }
+
+    #library p {
+        font-size: 16px;
+    }
+}
+
+
+/* about section ke liye */
+/* About Us Section */
+#about {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    padding: 50px 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #34495e;
+    letter-spacing: 1.5px;
+}
+
+#about p {
+    font-size: 18px;
+    margin: 0 auto 30px;
+    max-width: 800px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* About Us Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* About Us Cards */
+.about-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #16a085;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 28px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    .about-card h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+/* contact us form ke liye */
+/* Contact Us Section */
+#contact {
+    background: linear-gradient(to right, #ffffff, #f4f4f4);
+    padding: 60px 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #16a085;
+    box-shadow: 0 0 8px rgba(22, 160, 133, 0.2);
+}
+
+.contact-form .btn-submit {
+    background-color: #16a085;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #13856a;
+}
+
+/* Contact Details */
+.contact-details {
+    text-align: left;
+    max-width: 400px;
+    color: #555;
+}
+
+.contact-details h3 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/* footer ke liye bhi hai jagah */
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7f8c8d;
+}
+
+/* Footer Section Titles */
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1abc9c;
+}
+
+/* Footer About Section */
+.about-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Footer Quick Links */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Social Media Icons */
+.social-section ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-section ul li a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-section ul li a:hover img {
+    transform: scale(1.2);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom p a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
